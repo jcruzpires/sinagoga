@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/sinagoga/static/js/main.5598999a.js",
+    "main.js": "/sinagoga/static/js/main.90da8349.js",
     "static/media/n30.jpg": "/sinagoga/static/media/n30.43b8e2e282463de00935.jpg",
     "static/media/n102.jpg": "/sinagoga/static/media/n102.5d0cf0715ae30addc7c0.jpg",
     "static/media/n108.jpg": "/sinagoga/static/media/n108.24f7166cfde4f3cf877f.jpg",
@@ -21,9 +21,9 @@
     "static/media/n85.jpg": "/sinagoga/static/media/n85.c0aad46d87250fd59f65.jpg",
     "static/media/n6.jpg": "/sinagoga/static/media/n6.346254f682cedb9f218a.jpg",
     "index.html": "/sinagoga/index.html",
-    "main.5598999a.js.map": "/sinagoga/static/js/main.5598999a.js.map"
+    "main.90da8349.js.map": "/sinagoga/static/js/main.90da8349.js.map"
   },
   "entrypoints": [
-    "static/js/main.5598999a.js"
+    "static/js/main.90da8349.js"
   ]
 }
