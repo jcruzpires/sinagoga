@@ -1,5 +1,5 @@
 import { DadosQuadrinhos } from "./DadosQuadrinhos";
-const numeroTotalQuadrinhos = 27;
+const numeroTotalQuadrinhos = 114;
 
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -10,17 +10,16 @@ function shuffle(a) {
 }
 
 const inicioPerguntas = [
-  "Onde nasceu o ",
   "Qual o ano da formatura do ",
   "Qual o curso do ",
 ];
 
 const gerarInicioDePergunta = (q) => {
-  return inicioPerguntas[q];
+  return inicioPerguntas[q-1];
 };
 
 const gerarTipoPergunta = () => {
-  return Math.floor(Math.random() * (2 - 0 + 1)) + 0; //0 cidade, 1 ano, 2 curso
+  return Math.floor(Math.random() * (2 - 1 + 1)) + 1;
 };
 
 const selecionarExAluna = () => {
@@ -39,20 +38,6 @@ export const montarQA = () => {
   var opcaoCorreta;
 
   switch (tipoDePergunta) {
-    case 0:
-      opcaoCorreta = DadosQuadrinhos[qualExala].cidade;
-      opcoesResposta.push(DadosQuadrinhos[qualExala].cidade);
-      opcoesResposta.push(
-        DadosQuadrinhos[
-          Math.floor(Math.random() * (numeroTotalQuadrinhos - 1 - 0 + 1)) + 0
-        ].cidade
-      );
-      opcoesResposta.push(
-        DadosQuadrinhos[
-          Math.floor(Math.random() * (numeroTotalQuadrinhos - 1 - 0 + 1)) + 0
-        ].cidade
-      );
-      break;
     case 1:
       opcaoCorreta = DadosQuadrinhos[qualExala].ano;
       opcoesResposta.push(DadosQuadrinhos[qualExala].ano);

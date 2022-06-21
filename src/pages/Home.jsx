@@ -10,7 +10,10 @@ function Home() {
     <>
       <Grid container direction="row" className={classes.root}>
         <Link className={classes.link} to="parede">
-          <Typography>Ex-alunos</Typography>
+          <Typography>Ex-alunos (PC)</Typography>
+        </Link>
+        <Link className={classes.link} to="parede-mobile">
+          <Typography>Ex-alunos (Mobile)</Typography>
         </Link>
         <Link className={classes.link} to="quiz">
           <Typography>Quiz</Typography>
