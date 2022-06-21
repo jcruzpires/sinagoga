@@ -17,17 +17,24 @@ export default function QuadrinhoFixoExAluna(obj) {
         onClick={handleClick}
         className={classes.parteFrente}
         sx={{
-          width: 190,
-          height: 340,
-          backgroundColor: "rgb(234, 209, 238)",
-          color: "purple",
-          border: "1px solid white",
+          width: 170,
+          height: 240,
+          objectFit: "cover"
         }}
       >
         {obj.mostrar ? (
-          <img src={obj.exaluna.foto} width={190} />
+          <img
+            src={obj.exaluna.foto}
+            width={170}
+            height={240}
+            sx={{ objectFit: "cover" }}
+          />
         ) : (
-          <Typography fontSize={28}>{obj.exaluna.posicao}</Typography>
+          <Typography
+            fontSize={28}
+          >
+            {obj.exaluna.posicao}
+          </Typography>
         )}
       </Button>
 
@@ -35,16 +42,18 @@ export default function QuadrinhoFixoExAluna(obj) {
         onClick={handleClick}
         className={classes.parteTras}
         sx={{
+          width: 170,
+          height: 240,
           color: "white",
-          border: "5px solid rgb(176, 0, 176)",
-          backgroundColor: "purple",
+          backgroundColor: "rgb(129, 171, 240)",
+          objectFit: "cover",
           "&:hover": {
-            color: "purple",
-            backgroundColor: "rgb(234, 209, 238)",
+            color: "white",
+            backgroundColor: "rgb(85, 131, 207)",
           },
         }}
       >
-        <Typography fontSize={16} fontWeight={600}>
+        <Typography fontSize={14} fontWeight={600}>
           {obj.exaluna.nome} <br></br>
           <br></br>
           {obj.exaluna.apelido ? "(" + obj.exaluna.apelido + ")" : <>-</>}
@@ -64,18 +73,17 @@ export default function QuadrinhoFixoExAluna(obj) {
 
 const useStyles = makeStyles(() => ({
   parteTras: {
-    width: 190,
-    height: 337,
-    margin: 5,
+    width: 170,
+    height: 240,
     texTransform: "lowercase",
     ".MuiButton‑text": {
-      textColor: "red",
       texTransform: "lowercase",
     },
+    objectFit: "cover",
   },
   parteFrente: {
-    width: 190,
-    backgroundColor: "rgb(234, 209, 238)",
-    margin: 5,
+    width: 170,
+    height: 240,
+    objectFit: "cover",
   },
 }));

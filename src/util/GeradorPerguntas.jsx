@@ -10,9 +10,9 @@ function shuffle(a) {
 }
 
 const inicioPerguntas = [
-  "Onde nasceu a ",
-  "Qual o ano da formatura da ",
-  "Qual o curso da ",
+  "Onde nasceu o ",
+  "Qual o ano da formatura do ",
+  "Qual o curso do ",
 ];
 
 const gerarInicioDePergunta = (q) => {

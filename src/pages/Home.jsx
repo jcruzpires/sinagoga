@@ -1,6 +1,5 @@
 import { Grid, Typography, Button, Menu, MenuItem } from "@mui/material";
 import React, { Component, useEffect, useState } from "react";
-import MenuRepublicas from "../components/MenuRepublicas";
 import { makeStyles } from "@mui/styles";
 import { Link } from "react-router-dom";
 
@@ -11,23 +10,11 @@ function Home() {
     <>
       <Grid container direction="row" className={classes.root}>
         <Link className={classes.link} to="parede">
-          <Typography>Ex-alunas</Typography>
+          <Typography>Ex-alunos</Typography>
         </Link>
-        <Link className={classes.link} to="parede-homenageados">
-          <Typography>Homenageados</Typography>
-        </Link>
-        <Grid className={classes.link}>
-          <MenuRepublicas />
-        </Grid>
-        {/* <Link className={classes.link} to="ordenar-quadrinhos">
-          <Typography>Ordenar Quadrinhos</Typography>
-        </Link>*/}
         <Link className={classes.link} to="quiz">
           <Typography>Quiz</Typography>
         </Link>
-        {/* <Link className={classes.link} to="ordenar-nomes">
-          <Typography>Ordenar Nomes</Typography>
-        </Link> */}
       </Grid>
     </>
   );

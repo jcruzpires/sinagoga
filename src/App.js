@@ -4,8 +4,6 @@ import OrdenarQuadrinhos from "./pages/OrdenarQuadrinhos";
 import ParedeQuadrinhosFixos from "./pages/ParedeQuadrinhosFixos";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
-import TelaHino from "./pages/TelaHino";
-import ParedeHomenageados from "./pages/ParedeHomenageados";
 
 function App() {
   return (
@@ -13,11 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="parede" element={<ParedeQuadrinhosFixos />} />
-        <Route path="parede-homenageados" element={<ParedeHomenageados />} />
         <Route path="ordenar-quadrinhos" element={<OrdenarQuadrinhos />} />
         <Route path="ordenar-nomes" element={<OrdenarNomes />} />
         <Route path="quiz" element={<Quiz />} />
-        <Route path="hinos/:id" element={<TelaHino />} />
       </Routes>
     </>
   );
