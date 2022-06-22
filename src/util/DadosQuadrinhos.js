@@ -226,14 +226,6 @@ export const DadosQuadrinhos = [
     apelido: "",
   },
   {
-    posicao: 13,
-    nome: "VALÉRIO FUSARO",
-    curso: "ENG. GERAL",
-    ano: "1957",
-    foto: n13,
-    apelido: "",
-  },
-  {
     posicao: 14,
     nome: "GUIDO DEODORO JAQUES PENIDO",
     curso: "ENG. GERAL",
