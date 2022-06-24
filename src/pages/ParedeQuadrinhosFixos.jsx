@@ -33,7 +33,7 @@ function ParedeQuadrinhosFixos(isExaluna) {
       >
         {!!DadosQuadrinhos?.length &&
           DadosQuadrinhos?.map((q) => {
-            if (q.posicao < 32) {
+            if (q.posicao <= 32) {
               return (
                 <div className={classes.parede1Item}>
                   <QuadrinhoFixoExAluna
@@ -55,7 +55,7 @@ function ParedeQuadrinhosFixos(isExaluna) {
       >
         {!!DadosQuadrinhos?.length &&
           DadosQuadrinhos?.map((q) => {
-            if (q.posicao > 31 && q.posicao < 31+16) {
+            if (q.posicao > 32 && q.posicao < 32+16) {
               return (
                 <div className={classes.parede2Item}>
                   <QuadrinhoFixoExAluna
@@ -77,7 +77,7 @@ function ParedeQuadrinhosFixos(isExaluna) {
       >
         {!!DadosQuadrinhos?.length &&
           DadosQuadrinhos?.map((q) => {
-            if (q.posicao > 31+16 && q.posicao < 32+16+40) {
+            if (q.posicao > 32+16 && q.posicao <= 32+16+40) {
               return (
                 <div className={classes.parede3Item}>
                   <QuadrinhoFixoExAluna
@@ -99,7 +99,7 @@ function ParedeQuadrinhosFixos(isExaluna) {
       >
         {!!DadosQuadrinhos?.length &&
           DadosQuadrinhos?.map((q) => {
-            if (q.posicao > 31+16+40 && q.posicao < 32+16+40+28) {
+            if (q.posicao > 32+16+40 && q.posicao < 32+16+40+28) {
               return (
                 <div className={classes.parede4Item}>
                   <QuadrinhoFixoExAluna
