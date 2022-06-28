@@ -19,13 +19,28 @@ function Home() {
           <Typography>Quiz</Typography>
         </Link>
       </Grid>
+      <Grid container direction="row" className={classes.root}>
+        <Link className={classes.link} to="parede-1">
+          <Typography>Parede 1</Typography>
+        </Link>
+        <Link className={classes.link} to="parede-2">
+          <Typography>Parede 2</Typography>
+        </Link>
+        <Link className={classes.link} to="parede-3">
+          <Typography>Parede 3</Typography>
+        </Link>
+        <Link className={classes.link} to="parede-4">
+          <Typography>Parede 4</Typography>
+        </Link>
+        
+      </Grid>
     </>
   );
 }
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: "98vh",
+    height: "45vh",
     justifyContent: "center",
     alignItems: "center",
   },
