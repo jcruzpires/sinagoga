@@ -33,7 +33,7 @@ function Parede4(isExaluna) {
       >
         {!!DadosQuadrinhos?.length &&
           DadosQuadrinhos?.map((q) => {
-            if (q.posicao > 31 + 16 + 40 && q.posicao < 32 + 16 + 40 + 28) {
+            if (q.posicao > 32+16+40 && q.posicao < 32+16+40+28) {
               return (
                 <QuadrinhoFixoExAluna
                   key={q.posicao}
