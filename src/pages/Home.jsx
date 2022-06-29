@@ -32,6 +32,12 @@ function Home() {
         <Link className={classes.link} to="parede-4">
           <Typography>Parede 4</Typography>
         </Link>
+        <Link className={classes.link} to="homenageados">
+          <Typography>Homenageados</Typography>
+        </Link>
+        <Link className={classes.link} to="hino">
+          <Typography>Hino</Typography>
+        </Link>
         
       </Grid>
     </>
